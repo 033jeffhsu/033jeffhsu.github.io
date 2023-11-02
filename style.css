@@ -1,0 +1,28 @@
+body{
+    background-color: powderblue;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("https://www.wizardtower.com/blog/wp-content/uploads/2020/09/Omnath1.png");
+}
+
+h1{
+    color:blue;
+    padding: 16px;
+}
+
+h2{
+margin: 16px;
+}
+
+p{
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    white-space: pre-line;
+    background-color: mintcream;
+    border-radius: 10px;
+}
+.event{
+    width: 250px;
+    margin: 16px;
+}
