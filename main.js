@@ -7,11 +7,11 @@ var list = document.getElementById("list");
 var upload = document.getElementById("upload");
 var image = document.getElementById("image");
 
-const imagearr = [];
+var imagearr = [];
 
 upload.addEventListener("click", function (){
     imagearr.push(image.value);
-    upload.value = "";
+    image.value = "";
 })
 button.addEventListener("click", function(){
 
@@ -29,6 +29,7 @@ button.addEventListener("click", function(){
     list.innerHTML += `</div>`;
     title.value = "";
     content.value ="";
+    imagearr = [];
 });
 
 
