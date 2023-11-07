@@ -15,7 +15,13 @@ upload.addEventListener("click", function (){
 })
 button.addEventListener("click", function(){
 
-    list.innerHTML +=
+    document.write("<div class=\"article\">");
+    document.write("<h2>" + title.value + "</h2>");
+    document.write("<p>" + content.value + "</p>");
+    for (let i = 0; i < imagearr.length; i++){
+        document.write("<img src=" + imagearr[i] + "class=\"event\" alt=\"event png\">");
+    }
+    /*list.innerHTML +=
         `<div class="article">
             <h2>${title.value}</h2>
             <p>${content.value}</p>
@@ -25,8 +31,8 @@ button.addEventListener("click", function(){
         list.innerHTML += `
         <img src="${imagearr[i]}" class="event" alt="event png">
         `;
-    }
-    list.innerHTML += `</div>`;
+    }*/
+    document.write("</div>");
     title.value = "";
     content.value ="";
     imagearr = [];
