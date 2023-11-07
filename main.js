@@ -1,4 +1,5 @@
 //blog
+
 var title = document.getElementById("title");
 var content = document.getElementById("content");
 var button = document.getElementById("btn");
